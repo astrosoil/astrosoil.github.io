@@ -17,7 +17,7 @@ feel free to change fonts and icons
 
 <title>cel</title> <!-- window title -->
 
-<link rel="shortcut icon" href="{favicon}">
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -137,9 +137,17 @@ body {
     background-attachment:fixed; /* or scroll (defautl) */
 }
 
+light {
+  color: #5C5C5C;
+  font-size:12px;
+}
+
 a {
-    color:#000000; /* link color */
     text-decoration:none;
+}
+
+section a {
+    color: #000000;
 }
 
 header img {
@@ -164,8 +172,15 @@ section {
     width:250px;
 }
 
+.accent, a {
+    color: #780101;
+}
+
 .title {
-    font-size:16px; /* title font size */
+    font-size:13px; /* title font size */
+    text-transform: uppercase;
+    font-weight:800;
+    letter-spacing:2px;
 }
 
 .welcome {
@@ -197,7 +212,19 @@ section {
 .six {border-left:5px solid #c9e5f3;} /* link six */
 .seven {border-left:5px solid #cae1e7;} /* link seven */
 .eight {border-left:5px solid #dfe4e7;} /* link eight */
-.grey {border-left:5px solid #e0e0e0;}
+
+.grey {
+  border-left:5px solid #CCABAB;
+  -webkit-transition: border-left 0.4s ease-out;
+  -moz-transition: border-left 0.4s ease-out;
+  -o-transition: border-left 0.4s ease-out;
+  transition: border-left 0.4s ease-out;
+}
+
+.grey:hover {
+  border-left:10px solid #CCABAB;
+}
+
 
 /* icons */
 
@@ -261,7 +288,7 @@ footer {
     <!-- description -->
     <div class="welcome">
         i like to make things.<br>
-        fiction, poetry, analyses, reviews, & occasional screenplays.
+        <light>fiction, poetry, analyses, reviews, & occasional screenplays.</light>
     </div>
     
 </header>
@@ -275,49 +302,46 @@ footer {
         if you want to change icons go to saturnthms.com/font there are instrcutions there to help you use them easily -->
     
     
-    <!-- link one -->
-    <div class="subs grey">
-    <!-- <i class="sf sf-star" aria-hidden="true"></i> <-- icon goes here -->
+
     <a href="https://lovereadwrite.blogspot.com/" target="_blank"> <!-- link goes here -->
-    creative writing blog <!-- link name goes here -->
+      <div class="subs grey">
+        <!-- <i class="sf sf-star" aria-hidden="true"></i> <-- icon goes here -->
+        creative writing blog <!-- link name goes here -->
+      </div>
     </a>
-    </div>
     
-    <!-- link two -->
-    <div class="subs grey">
-    <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
-    <a href="https://artjourns.wordpress.com" target="_blank">film/tv review blog</a>
-    </div>
-    
-    <!-- link three -->
-    <div class="subs grey">
-    <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
-    <a href="https://twitter.com/filmscribbles" target="_blank">film twitter</a>
-    </div>
-    
-    <!-- link four -->
-    <div class="subs grey">
-    <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
-    <a href="https://letterboxd.com/astrosoil/" target="_blank">letterboxd</a>
-    </div>
-    </div>
+
+    <a href="https://artjourns.wordpress.com" target="_blank">
+      <div class="subs grey">
+      <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
+        film/tv review blog
+      </div>
+    </a>
+
+    <a href="https://twitter.com/filmscribbles" target="_blank">
+      <div class="subs grey">
+        <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
+        film twitter
+      </div>
+    </a>
+
+    <a href="https://letterboxd.com/astrosoil/" target="_blank">
+      <div class="subs grey">
+        <!-- <i class="sf sf-star" aria-hidden="true"></i> -->
+        letterboxd
+      </div>
+    </a>
+</section>
     
 <footer>
     
     <!-- footer text - if you won't use this section just delete the following div and not the footer itself -->
 
     <div class="bye">
-        contact: journeyinart@googlegroups.com<br>
+        contact: <a href="mailto:journeyinart@googlegroups.com">journeyinart@googlegroups.com</a><br>
         theme credit: <a href="https://amboise.tumblr.com/" target="_blank">amboise</a>
     </div>
     
 </footer>
-
-<!-- don't change anything from this point on -->
-
-<a class="credit" href="https://amboise.tumblr.com/"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg></a>
-
-<!-- <div class="hcontrols"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" enable-background="new 0 0 216 216" xml:space="preserve"><path d="M106.6,134c14.3,0,26-11.7,26-26s-11.7-26-26-26s-26,11.7-26,26S92.2,134,106.6,134z M106.6,94c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S98.9,94,106.6,94z M40.4,124.6l7.2,3.3c3,1.4,4.4,4.8,3.3,7.9l-2.8,7.4c-2.1,5.7-1.4,11.8,2.1,16.7c3.4,5,9,7.9,15,7.9c2.2,0,4.4-0.4,6.5-1.2l7.4-2.8c0.7-0.3,1.4-0.4,2.2-0.4c2.4,0,4.7,1.4,5.7,3.7l3.3,7.2c3,6.6,9.4,10.7,16.6,10.7s13.6-4.1,16.6-10.7l3.3-7.2c1-2.2,3.2-3.7,5.7-3.7c0.7,0,1.5,0.1,2.2,0.4l7.4,2.8c2.1,0.8,4.3,1.2,6.5,1.2c0,0,0,0,0,0c5.9,0,11.5-3,15-7.9c3.4-5,4.2-11.1,2.1-16.7l-2.8-7.4c-1.1-3.1,0.3-6.5,3.3-7.9l7.2-3.3c6.6-3,10.7-9.4,10.7-16.6s-4.1-13.6-10.7-16.6l-7.2-3.3c-3-1.4-4.4-4.8-3.3-7.9l2.8-7.4c2.1-5.7,1.4-11.8-2.1-16.7c-3.4-5-9-7.9-15-7.9c-2.2,0-4.4,0.4-6.5,1.2l-7.4,2.8c-0.7,0.3-1.4,0.4-2.2,0.4c-2.4,0-4.7-1.4-5.7-3.7l-3.3-7.2c-3-6.6-9.4-10.7-16.6-10.7S93,35.2,90,41.8l-3.3,7.2c-1,2.2-3.2,3.7-5.7,3.7c-0.7,0-1.5-0.1-2.2-0.4l-7.4-2.8c-2.1-0.8-4.3-1.2-6.5-1.2c-5.9,0-11.5,3-15,7.9c-3.4,5-4.2,11.1-2.1,16.7l2.8,7.4c1.1,3.1-0.3,6.5-3.3,7.9l-7.2,3.3c-6.6,3-10.7,9.4-10.7,16.6S33.8,121.6,40.4,124.6z M45.3,102.3l7.2-3.3c8.7-4,12.9-14.1,9.5-23l-2.8-7.4c-1-2.7,0-4.7,0.7-5.7c1.6-2.4,4.6-3.4,7.4-2.3l7.4,2.8c2.1,0.8,4.2,1.2,6.4,1.2c0,0,0,0,0,0c7.1,0,13.6-4.2,16.6-10.7l3.3-7.2c1.5-3.4,4.7-3.7,5.7-3.7s4.1,0.3,5.7,3.7l3.3,7.2c3,6.5,9.5,10.7,16.6,10.7c2.2,0,4.3-0.4,6.4-1.2l7.4-2.8c2.8-1,5.7,0,7.4,2.3c0.7,1,1.7,3,0.7,5.7l-2.8,7.4c-3.3,8.9,0.8,19,9.5,23l7.2,3.3c3.4,1.5,3.7,4.7,3.7,5.7s-0.3,4.1-3.7,5.7l-7.2,3.3c-8.7,4-12.9,14.1-9.5,23l2.8,7.4c1,2.7,0,4.7-0.7,5.7c-1.6,2.4-4.6,3.4-7.4,2.3l-7.4-2.8c-2.1-0.8-4.2-1.2-6.4-1.2c-7.1,0-13.6,4.2-16.6,10.7l-3.3,7.2c-1.5,3.4-4.7,3.7-5.7,3.7s-4.1-0.3-5.7-3.7l-3.3-7.2c-3-6.5-9.5-10.7-16.6-10.7c-2.2,0-4.3,0.4-6.4,1.2l-7.4,2.8c-2.8,1-5.7,0-7.4-2.3c-0.7-1-1.7-3-0.7-5.7l2.8-7.4c3.3-8.9-0.8-19-9.5-23l-7.2-3.3c-3.4-1.5-3.7-4.7-3.7-5.7S41.9,103.9,45.3,102.3z"/></svg></div>
- -->
 </body>
 </html>
