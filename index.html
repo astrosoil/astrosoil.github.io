@@ -191,14 +191,25 @@ section {
     font-size:13px; /* description and footer font size */
 }
 
+.bye {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.bye:hover {
+  opacity:1;
+}
+
 /* links */
 
 .subs {
-    width:224px;
-    background-color:rgb(255,255,255); /* background color */
-    border:1px solid #eee;
-    margin-bottom:5px;
-    padding:12px;
+  border:1px solid #eee;
+  margin-bottom:5px;
+  padding:7px 12px;
+  box-sizing:border-box;
 }
 
 /* links border color */
@@ -214,6 +225,10 @@ section {
 .eight {border-left:5px solid #dfe4e7;} /* link eight */
 
 .grey {
+  /*width:224px;*/
+  width:254px;
+  background-color:#fff; /* background color */
+
   border-left:5px solid #E0BABA;
   -webkit-transition: border-left 0.4s ease-out;
   -moz-transition: border-left 0.4s ease-out;
@@ -222,6 +237,7 @@ section {
 }
 
 .grey:hover {
+  background-color:#fcf9f9;
   border-left:10px solid #E0BABA;
 }
 
@@ -331,6 +347,12 @@ footer {
         letterboxd
       </div>
     </a>
+
+    <a href="https://ello.co/atempo" target="_blank">
+      <div class="subs grey">
+        writing scribbles
+      </div>
+    </a>
 </section>
     
 <footer>
@@ -338,7 +360,6 @@ footer {
     <!-- footer text - if you won't use this section just delete the following div and not the footer itself -->
 
     <div class="bye">
-        contact: <a href="mailto:journeyinart@googlegroups.com">journeyinart@googlegroups.com</a><br>
         theme credit: <a href="https://amboise.tumblr.com/" target="_blank">amboise</a>
     </div>
     
